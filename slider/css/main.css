@@ -1,0 +1,84 @@
+@import "../../css/reset.css";
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  margin-top: 80px;
+  padding: 40px 30px;
+  border-radius: 30px;
+  border: 2px solid gainsboro;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.leftBtn {
+  position: relative;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  transform: rotate(180deg);
+}
+
+.rightBtn {
+  position: relative;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+}
+
+.window {
+  width: 640px;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slides > img {
+  width: 640px;
+  height: 320px;
+}
+
+.dots {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  top: 500px;
+}
+
+.dot {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: gold;
+}
+
+.active {
+  background-color: greenyellow;
+}
